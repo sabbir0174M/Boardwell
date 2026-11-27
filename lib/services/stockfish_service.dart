@@ -1,4 +1,3 @@
-```dart
 import 'dart:async';
 
 import 'package:dartchess/dartchess.dart';
@@ -436,4 +435,4 @@ class StockfishService {
     _isReady = false;
   }
 }
-```
+
