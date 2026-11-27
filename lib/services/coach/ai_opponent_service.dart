@@ -1,4 +1,3 @@
-```dart
 import 'package:dartchess/dartchess.dart';
 
 import '../../models/coach_profile.dart';
