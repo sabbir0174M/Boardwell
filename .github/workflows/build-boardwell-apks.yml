@@ -1,0 +1,54 @@
+name: Build Boardwell Android APKs
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Java
+        uses: actions/setup-java@v5
+        with:
+          distribution: "temurin"
+          java-version: "17"
+
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: "stable"
+
+      - name: Generate Android files if missing
+        run: |
+          if [ ! -d "android" ]; then
+            flutter create --platforms=android .
+          fi
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Build universal and split APKs
+        run: |
+          flutter build apk --release
+          flutter build apk --release --split-per-abi
+
+          mkdir -p dist-apks
+          cp build/app/outputs/flutter-apk/app-release.apk dist-apks/Boardwell-universal-release.apk
+
+          for abi in armeabi-v7a arm64-v8a x86_64; do
+            if [ -f "build/app/outputs/flutter-apk/app-${abi}-release.apk" ]; then
+              cp "build/app/outputs/flutter-apk/app-${abi}-release.apk" "dist-apks/Boardwell-${abi}-release.apk"
+            fi
+          done
+
+      - name: Upload Boardwell APKs
+        uses: actions/upload-artifact@v4
+        with:
+          name: boardwell-android-apks
+          path: dist-apks/*.apk
