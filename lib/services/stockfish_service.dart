@@ -1,3 +1,4 @@
+```dart
 import 'dart:async';
 
 import 'package:dartchess/dartchess.dart';
@@ -379,7 +380,7 @@ class StockfishService {
       final moves = makeLegalMoves(pos);
       for (final entry in moves.entries) {
         if (entry.value.isNotEmpty) {
-          final to = entry.value.squares.first;
+          final to = entry.value.first;
           return NormalMove(from: entry.key, to: to).uci;
         }
       }
@@ -435,3 +436,4 @@ class StockfishService {
     _isReady = false;
   }
 }
+```
