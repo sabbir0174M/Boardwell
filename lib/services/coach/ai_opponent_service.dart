@@ -1,3 +1,4 @@
+```dart
 import 'package:dartchess/dartchess.dart';
 
 import '../../models/coach_profile.dart';
@@ -134,7 +135,7 @@ class AiOpponentService {
     final legalMoves = makeLegalMoves(position);
     for (final entry in legalMoves.entries) {
       final from = entry.key;
-      for (final to in entry.value.squares) {
+      for (final to in entry.value) {
         final isPromotion = position.board.pieceAt(from)?.role == Role.pawn &&
             (to.rank == Rank.eighth || to.rank == Rank.first);
         if (isPromotion) {
@@ -209,3 +210,4 @@ class AiOpponentService {
     );
   }
 }
+```
