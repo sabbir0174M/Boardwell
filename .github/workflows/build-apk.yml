@@ -48,7 +48,6 @@ jobs:
               for y in range(size):
                   raw.append(0)
                   for x in range(size):
-                      # Clean 4x4 green/ivory chessboard icon
                       cell = ((x * 4) // size + (y * 4) // size) % 2
                       if cell == 0:
                           raw.extend((27, 94, 32, 255))
@@ -70,6 +69,25 @@ jobs:
 
       - name: Install dependencies
         run: flutter pub get
+
+      - name: Patch legacy jcenter() in cached Flutter plugins for Gradle 9
+        run: |
+          python3 - << 'EOF'
+          import os
+          from pathlib import Path
+
+          pub_cache = Path(os.environ.get('PUB_CACHE', os.path.expanduser('~/.pub-cache')))
+          hosted = pub_cache / 'hosted' / 'pub.dev'
+          patched = 0
+          if hosted.exists():
+              for gradle_file in hosted.glob('*/android/build.gradle'):
+                  text = gradle_file.read_text(errors='ignore')
+                  if 'jcenter()' in text:
+                      gradle_file.write_text(text.replace('jcenter()', 'mavenCentral()'))
+                      print(f'Patched jcenter() -> mavenCentral() in {gradle_file}')
+                      patched += 1
+          print(f'Total plugins patched: {patched}')
+          EOF
 
       - name: Run static analysis
         run: flutter analyze --no-fatal-infos
