@@ -1,4 +1,3 @@
-```dart
 import 'dart:async';
 
 import 'package:chessground/chessground.dart';
@@ -1092,4 +1091,4 @@ class _CompareCard extends StatelessWidget {
     );
   }
 }
-```
+
