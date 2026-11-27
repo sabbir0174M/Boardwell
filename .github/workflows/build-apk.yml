@@ -37,6 +37,37 @@ jobs:
           flutter --version
           java -version
 
+      - name: Generate Android launcher icons if missing
+        run: |
+          python3 - << 'EOF'
+          import struct, zlib
+          from pathlib import Path
+
+          def make_png(size):
+              raw = bytearray()
+              for y in range(size):
+                  raw.append(0)
+                  for x in range(size):
+                      # Clean 4x4 green/ivory chessboard icon
+                      cell = ((x * 4) // size + (y * 4) // size) % 2
+                      if cell == 0:
+                          raw.extend((27, 94, 32, 255))
+                      else:
+                          raw.extend((241, 248, 233, 255))
+              def chunk(tag, data):
+                  return struct.pack('>I', len(data)) + tag + data + struct.pack('>I', zlib.crc32(tag + data) & 0xffffffff)
+              ihdr = struct.pack('>IIBBBBB', size, size, 8, 6, 0, 0, 0)
+              return b'\x89PNG\r\n\x1a\n' + chunk(b'IHDR', ihdr) + chunk(b'IDAT', zlib.compress(bytes(raw))) + chunk(b'IEND', b'')
+
+          sizes = {'mipmap-mdpi': 48, 'mipmap-hdpi': 72, 'mipmap-xhdpi': 96, 'mipmap-xxhdpi': 144, 'mipmap-xxxhdpi': 192}
+          base = Path('android/app/src/main/res')
+          for folder, sz in sizes.items():
+              out = base / folder / 'ic_launcher.png'
+              if not out.exists():
+                  out.parent.mkdir(parents=True, exist_ok=True)
+                  out.write_bytes(make_png(sz))
+          EOF
+
       - name: Install dependencies
         run: flutter pub get
 
@@ -47,10 +78,10 @@ jobs:
         run: flutter test
 
       - name: Build Universal Multi-ABI Release APK
-        run: flutter build apk --release
+        run: flutter build apk --release --target-platform=android-arm,android-arm64,android-x64
 
       - name: Build Split Per-ABI Release APKs (armeabi-v7a, arm64-v8a, x86_64)
-        run: flutter build apk --release --split-per-abi
+        run: flutter build apk --release --split-per-abi --target-platform=android-arm,android-arm64,android-x64
 
       - name: Stage APK artifacts with descriptive names
         run: |
