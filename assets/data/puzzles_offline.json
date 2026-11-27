@@ -1,0 +1,182 @@
+[
+  {
+    "id": "puz_001",
+    "title": "Back Rank Checkmate",
+    "rating": 800,
+    "themes": ["mateIn1", "backRankMate"],
+    "fen": "6k1/5ppp/8/8/8/8/5PPP/3R2K1 w - - 0 1",
+    "solutionUci": ["d1d8"],
+    "hint": "Black's king is trapped behind its own pawns on the 8th rank."
+  },
+  {
+    "id": "puz_002",
+    "title": "Queen Mate on g7",
+    "rating": 850,
+    "themes": ["mateIn1", "battery"],
+    "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR w KQkq - 4 4",
+    "solutionUci": ["h5f7"],
+    "hint": "Both your queen and light-squared bishop attack the weak f7 pawn."
+  },
+  {
+    "id": "puz_003",
+    "title": "Smothered Knight Fork",
+    "rating": 950,
+    "themes": ["fork", "knight"],
+    "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+    "solutionUci": ["f3g5", "d7d5", "e4d5"],
+    "hint": "Increase pressure on f7 with your knight."
+  },
+  {
+    "id": "puz_004",
+    "title": "Arabian Mate Pattern",
+    "rating": 1000,
+    "themes": ["mateIn1", "arabianMate"],
+    "fen": "7k/5N1p/8/8/8/8/6PP/5R1K w - - 0 1",
+    "solutionUci": ["f1f8"],
+    "hint": "Your knight covers g8 and h6 — deliver checkmate along the f-file."
+  },
+  {
+    "id": "puz_005",
+    "title": "Queen & Bishop Diagonal Mate",
+    "rating": 1020,
+    "themes": ["mateIn1", "diagonal"],
+    "fen": "5rk1/5ppp/8/8/8/2B5/5PPP/3Q2K1 w - - 0 1",
+    "solutionUci": ["d1g4"],
+    "hint": "Line up your queen with the c3 bishop targeting g7."
+  },
+  {
+    "id": "puz_006",
+    "title": "Royal Knight Fork",
+    "rating": 1050,
+    "themes": ["fork", "tactic"],
+    "fen": "4k3/8/8/3q4/8/2N5/8/4K3 w - - 0 1",
+    "solutionUci": ["c3d5"],
+    "hint": "Capture the undefended queen directly with your knight."
+  },
+  {
+    "id": "puz_007",
+    "title": "Rook Skewer on the 7th",
+    "rating": 1100,
+    "themes": ["skewer", "endgame"],
+    "fen": "8/1k4q1/8/8/8/8/1R6/4K3 w - - 0 1",
+    "solutionUci": ["b2b7", "b7b7"],
+    "hint": "Check the king and align with the queen on the same rank."
+  },
+  {
+    "id": "puz_008",
+    "title": "Ladder Checkmate",
+    "rating": 900,
+    "themes": ["mateIn1", "endgame"],
+    "fen": "4k3/R7/8/8/8/8/1R6/4K3 w - - 0 1",
+    "solutionUci": ["b2b8"],
+    "hint": "Your rook on a7 cuts off the 7th rank; finish the mate on the 8th."
+  },
+  {
+    "id": "puz_009",
+    "title": "Knight Fork King and Rook",
+    "rating": 1120,
+    "themes": ["fork", "winningMaterial"],
+    "fen": "r3k3/8/8/8/4N3/8/8/4K3 w - - 0 1",
+    "solutionUci": ["e4d6", "e8d7", "d6b5"],
+    "hint": "Jump into d6 with check or look for a fork against king and rook."
+  },
+  {
+    "id": "puz_010",
+    "title": "Back Rank Deflection",
+    "rating": 1200,
+    "themes": ["mateIn2", "backRankMate"],
+    "fen": "3r2k1/5ppp/8/8/8/8/5PPP/3RR1K1 w - - 0 1",
+    "solutionUci": ["d1d8", "e1e8"],
+    "hint": "Trade the defending rook on d8, then follow up with your second rook."
+  },
+  {
+    "id": "puz_011",
+    "title": "Pinning the Queen",
+    "rating": 1180,
+    "themes": ["pin", "tactic"],
+    "fen": "4k3/4q3/8/8/8/8/4R3/4K3 w - - 0 1",
+    "solutionUci": ["e2e7", "e8e7"],
+    "hint": "The Black queen is directly in front of the king on the e-file."
+  },
+  {
+    "id": "puz_012",
+    "title": "Pawn Promotion Mate",
+    "rating": 1150,
+    "themes": ["promotion", "mateIn1"],
+    "fen": "6k1/4P1pp/8/8/8/8/8/4R1K1 w - - 0 1",
+    "solutionUci": ["e7e8q"],
+    "hint": "Promote your e7 pawn to a queen with checkmate!"
+  },
+  {
+    "id": "puz_013",
+    "title": "Black Back Rank Mate",
+    "rating": 920,
+    "themes": ["mateIn1", "backRankMate"],
+    "fen": "4r1k1/5ppp/8/8/8/8/5PPP/6K1 b - - 0 1",
+    "solutionUci": ["e8e1"],
+    "hint": "White's king has no luft on the first rank."
+  },
+  {
+    "id": "puz_014",
+    "title": "Smothered Mate in 1",
+    "rating": 1250,
+    "themes": ["mateIn1", "smotheredMate"],
+    "fen": "6rk/6pp/7N/8/8/8/8/6K1 w - - 0 1",
+    "solutionUci": ["h6f7"],
+    "hint": "Black's king is boxed in by its own rook and pawns."
+  },
+  {
+    "id": "puz_015",
+    "title": "Queen Sacrifice Back Rank",
+    "rating": 1350,
+    "themes": ["sacrifice", "mateIn2"],
+    "fen": "5rk1/5ppp/8/8/8/8/4QPPP/4R1K1 w - - 0 1",
+    "solutionUci": ["e2e8", "f8e8", "e1e8"],
+    "hint": "Force the rook away from protecting e8 with a bold queen move."
+  },
+  {
+    "id": "puz_016",
+    "title": "Bishop & Queen Battery Mate",
+    "rating": 1080,
+    "themes": ["mateIn1", "battery"],
+    "fen": "r4rk1/ppp2ppp/8/8/8/3B4/PPP2PPP/4Q1K1 w - - 0 1",
+    "solutionUci": ["e1e4"],
+    "hint": "Aim the queen toward h7 to combine with the d3 bishop."
+  },
+  {
+    "id": "puz_017",
+    "title": "Discovered Attack on the Queen",
+    "rating": 1300,
+    "themes": ["discoveredAttack", "tactic"],
+    "fen": "4k3/8/4n3/8/4q3/8/4B3/4R1K1 w - - 0 1",
+    "solutionUci": ["e2h5", "e8d7", "e1e4"],
+    "hint": "Move your bishop with check to uncover your rook on the e-file."
+  },
+  {
+    "id": "puz_018",
+    "title": "Queen Fork on e5",
+    "rating": 1220,
+    "themes": ["fork", "queen"],
+    "fen": "r5k1/5ppp/8/8/8/8/5PPP/3Q2K1 w - - 0 1",
+    "solutionUci": ["d1d8", "a8d8"],
+    "hint": "Attack the back rank immediately."
+  },
+  {
+    "id": "puz_019",
+    "title": "Black Knight Fork",
+    "rating": 1160,
+    "themes": ["fork", "knight"],
+    "fen": "4k3/8/8/8/3n4/8/2Q3K1/8 b - - 0 1",
+    "solutionUci": ["d4c2"],
+    "hint": "Capture the undefended White queen with your knight."
+  },
+  {
+    "id": "puz_020",
+    "title": "Mate on h7",
+    "rating": 980,
+    "themes": ["mateIn1", "kingsideAttack"],
+    "fen": "r4rk1/ppp2pp1/8/8/4Q3/3B4/PPP2PPP/6K1 w - - 0 1",
+    "solutionUci": ["e4h7"],
+    "hint": "The d3 bishop supports your queen for an immediate checkmate on h7."
+  }
+]

@@ -1,0 +1,212 @@
+[
+  {
+    "eco": "C20",
+    "name": "King's Pawn Game",
+    "moves": ["e4", "e5"],
+    "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+    "summary": "Classical symmetrical opening fighting immediately for central space and quick piece development."
+  },
+  {
+    "eco": "C50",
+    "name": "Italian Game",
+    "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4"],
+    "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3",
+    "summary": "White aims the light-squared bishop at f7 while preparing rapid castling and a central d4 or c3 break."
+  },
+  {
+    "eco": "C53",
+    "name": "Giuoco Piano",
+    "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5"],
+    "fen": "r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+    "summary": "Quiet Italian development leading to rich positional maneuvering or sharp central pawn breaks."
+  },
+  {
+    "eco": "C55",
+    "name": "Two Knights Defense",
+    "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6"],
+    "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+    "summary": "Active counterattack against e4 inviting tactical complications like Ng5 or quiet d3 play."
+  },
+  {
+    "eco": "C60",
+    "name": "Ruy Lopez (Spanish Opening)",
+    "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5"],
+    "fen": "r1bqkbnr/pppp1ppp/2n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3",
+    "summary": "One of chess's deepest openings, putting lasting pressure on Black's knight defending e5."
+  },
+  {
+    "eco": "C65",
+    "name": "Ruy Lopez: Berlin Defense",
+    "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Nf6"],
+    "fen": "r1bqkb1r/pppp1ppp/2n2n2/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+    "summary": "Ultra-solid counterattack on e4 favored by elite players for resilient endgame structures."
+  },
+  {
+    "eco": "C45",
+    "name": "Scotch Game",
+    "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4"],
+    "fen": "r1bqkbnr/pppp1ppp/2n5/8/3NP3/8/PPP2PPP/RNBQKB1R b KQkq - 0 4",
+    "summary": "Direct central clash that opens lines early and avoids long Ruy Lopez maneuvering."
+  },
+  {
+    "eco": "C42",
+    "name": "Petrov's Defense",
+    "moves": ["e4", "e5", "Nf3", "Nf6"],
+    "fen": "rnbqkb1r/pppp1ppp/5n2/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+    "summary": "Symmetrical counterattack on White's e4 pawn aiming for clean, balanced piece activity."
+  },
+  {
+    "eco": "C46",
+    "name": "Four Knights Game",
+    "moves": ["e4", "e5", "Nf3", "Nc6", "Nc3", "Nf6"],
+    "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p3/4P3/2N2N2/PPPP1PPP/R1BQKB1R w KQkq - 4 4",
+    "summary": "Classical, principled development bringing all four knights into play before committing pawns."
+  },
+  {
+    "eco": "C25",
+    "name": "Vienna Game",
+    "moves": ["e4", "e5", "Nc3"],
+    "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/2N5/PPPP1PPP/R1BQKBNR b KQkq - 1 2",
+    "summary": "Flexible opening preparing f4 or Bc4 while keeping the f-pawn unblocked."
+  },
+  {
+    "eco": "C30",
+    "name": "King's Gambit",
+    "moves": ["e4", "e5", "f4"],
+    "fen": "rnbqkbnr/pppp1ppp/8/4p3/4PP2/8/PPPP2PP/RNBQKBNR b KQkq f3 0 2",
+    "summary": "Romantic pawn sacrifice seeking rapid f-file pressure, central dominance, and tactical attacks."
+  },
+  {
+    "eco": "B20",
+    "name": "Sicilian Defense",
+    "moves": ["e4", "c5"],
+    "fen": "rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR w KQkq c6 0 2",
+    "summary": "Asymmetrical fighting defense contesting d4 from the flank and creating dynamic imbalances."
+  },
+  {
+    "eco": "B90",
+    "name": "Sicilian Defense: Najdorf Variation",
+    "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "a6"],
+    "fen": "rnbqkb1r/1p2pppp/p2p1n2/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq - 0 6",
+    "summary": "Sharp, ambitious Sicilian fighting for b5 expansion while controlling the key b5 square."
+  },
+  {
+    "eco": "B70",
+    "name": "Sicilian Defense: Dragon Variation",
+    "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "g6"],
+    "fen": "rnbqkb1r/pp2pp1p/3p1np1/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq - 0 6",
+    "summary": "Black fianchettoes the dark-squared bishop on g7 to aim a powerful diagonal down the board."
+  },
+  {
+    "eco": "C00",
+    "name": "French Defense",
+    "moves": ["e4", "e6", "d4", "d5"],
+    "fen": "rnbqkbnr/ppp2ppp/4p3/3p4/3PP3/8/PPP2PPP/RNBQKBNR w KQkq d6 0 3",
+    "summary": "Resilient counterattacking structure challenging White's e4 pawn with solid pawn chains."
+  },
+  {
+    "eco": "B10",
+    "name": "Caro-Kann Defense",
+    "moves": ["e4", "c6", "d4", "d5"],
+    "fen": "rnbqkbnr/pp2pppp/2p5/3p4/3PP3/8/PPP2PPP/RNBQKBNR w KQkq d6 0 3",
+    "summary": "Solid defense supporting d5 without locking in the light-squared c8 bishop."
+  },
+  {
+    "eco": "B01",
+    "name": "Scandinavian Defense",
+    "moves": ["e4", "d5"],
+    "fen": "rnbqkbnr/ppp1pppp/8/3p4/4P3/8/PPPP1PPP/RNBQKBNR w KQkq d6 0 2",
+    "summary": "Immediate central challenge forcing White to resolve the e4-d5 pawn tension on move two."
+  },
+  {
+    "eco": "B07",
+    "name": "Pirc Defense",
+    "moves": ["e4", "d6", "d4", "Nf6", "Nc3", "g6"],
+    "fen": "rnbqkb1r/ppp1pp1p/3p1np1/8/3PP3/2N5/PPP2PPP/R1BQKBNR w KQkq - 1 4",
+    "summary": "Hypermodern setup letting White build a broad center before counterattacking it with c5 or e5."
+  },
+  {
+    "eco": "B02",
+    "name": "Alekhine's Defense",
+    "moves": ["e4", "Nf6"],
+    "fen": "rnbqkb1r/pppppppp/5n2/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 1 2",
+    "summary": "Provocative hypermodern defense tempting White's pawns forward to become future targets."
+  },
+  {
+    "eco": "D06",
+    "name": "Queen's Gambit",
+    "moves": ["d4", "d5", "c4"],
+    "fen": "rnbqkbnr/ppp1pppp/8/3p4/2PP4/8/PP2PPPP/RNBQKBNR b KQkq c3 0 2",
+    "summary": "Classical wing-pawn offer to deflect Black's d5 pawn and seize superior central control."
+  },
+  {
+    "eco": "D30",
+    "name": "Queen's Gambit Declined",
+    "moves": ["d4", "d5", "c4", "e6"],
+    "fen": "rnbqkbnr/ppp2ppp/4p3/3p4/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3",
+    "summary": "Time-tested central defense keeping a strong pawn foothold on d5."
+  },
+  {
+    "eco": "D10",
+    "name": "Slav Defense",
+    "moves": ["d4", "d5", "c4", "c6"],
+    "fen": "rnbqkbnr/pp2pppp/2p5/3p4/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3",
+    "summary": "Compact support for d5 that keeps Black's light-squared bishop free to develop outside the chain."
+  },
+  {
+    "eco": "D02",
+    "name": "London System",
+    "moves": ["d4", "d5", "Nf3", "Nf6", "Bf4"],
+    "fen": "rnbqkb1r/ppp1pppp/5n2/3p4/3P1B2/5N2/PPP1PPPP/RN1QKB1R b KQkq - 3 3",
+    "summary": "Reliable, low-theory system developing the dark-squared bishop early before solidifying with e3."
+  },
+  {
+    "eco": "E60",
+    "name": "King's Indian Defense",
+    "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7"],
+    "fen": "rnbqk2r/ppppppbp/5np1/8/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4",
+    "summary": "Dynamic hypermodern defense aiming for rapid castling and a fierce kingside or central counterattack."
+  },
+  {
+    "eco": "E20",
+    "name": "Nimzo-Indian Defense",
+    "moves": ["d4", "Nf6", "c4", "e6", "Nc3", "Bb4"],
+    "fen": "rnbqk2r/pppp1ppp/4pn2/8/1bPP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4",
+    "summary": "Strategic pin on the c3 knight fighting for control of the e4 square and structural flexibility."
+  },
+  {
+    "eco": "D80",
+    "name": "Grünfeld Defense",
+    "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "d5"],
+    "fen": "rnbqkb1r/ppp1pp1p/5np1/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq d6 0 4",
+    "summary": "Counterattacking system inviting White to build a large center and then undermining it with pieces."
+  },
+  {
+    "eco": "E00",
+    "name": "Catalan Opening",
+    "moves": ["d4", "Nf6", "c4", "e6", "g3"],
+    "fen": "rnbqkbnr/pppp1ppp/4p3/8/2PP4/6P1/PP2PP1P/RNBQKBNR b KQkq - 0 3",
+    "summary": "Positional squeeze combining Queen's Gambit central pressure with a powerful g2 fianchetto."
+  },
+  {
+    "eco": "A10",
+    "name": "English Opening",
+    "moves": ["c4"],
+    "fen": "rnbqkbnr/pppppppp/8/8/2P5/8/PP1PPPPP/RNBQKBNR b KQkq c3 0 1",
+    "summary": "Flexible flank opening controlling d5 and often transposing into reversed Sicilian structures."
+  },
+  {
+    "eco": "A04",
+    "name": "Réti Opening",
+    "moves": ["Nf3", "d5", "c4"],
+    "fen": "rnbqkbnr/ppp1pppp/8/3p4/2P5/5N2/PP1PPPPP/RNBQKB1R b KQkq c3 0 2",
+    "summary": "Hypermodern knight-first approach attacking Black's center from the wings."
+  },
+  {
+    "eco": "A80",
+    "name": "Dutch Defense",
+    "moves": ["d4", "f5"],
+    "fen": "rnbqkbnr/ppppp1pp/8/5p2/3P4/8/PPP1PPPP/RNBQKBNR w KQkq f6 0 2",
+    "summary": "Ambitious asymmetrical reply to 1.d4 immediately claiming control over the e4 square."
+  }
+]
