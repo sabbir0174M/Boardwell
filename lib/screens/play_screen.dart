@@ -1,3 +1,4 @@
+```dart
 import 'dart:async';
 
 import 'package:chessground/chessground.dart';
@@ -48,7 +49,7 @@ class _PlayScreenState extends State<PlayScreen> {
 
   Move? _lastMove;
   Side _orientation = Side.white;
-  Side _playerSide = Side.white;
+  final Side _playerSide = Side.white;
   OpponentMode _opponentMode = OpponentMode.stockfishBot;
   int _stockfishSkill = 6;
 
@@ -506,7 +507,7 @@ class _PlayScreenState extends State<PlayScreen> {
                     children: [
                       Expanded(
                         child: DropdownButtonFormField<String>(
-                          value: coachA.id,
+                          initialValue: coachA.id,
                           isExpanded: true,
                           decoration: const InputDecoration(
                             labelText: 'Coach A',
@@ -531,7 +532,7 @@ class _PlayScreenState extends State<PlayScreen> {
                       const SizedBox(width: 10),
                       Expanded(
                         child: DropdownButtonFormField<String>(
-                          value: coachB.id,
+                          initialValue: coachB.id,
                           isExpanded: true,
                           decoration: const InputDecoration(
                             labelText: 'Coach B',
@@ -618,13 +619,20 @@ class _PlayScreenState extends State<PlayScreen> {
 
   void _showGameOverDialog() {
     final outcome = _position.outcome;
+    final reason = _position.isCheckmate
+        ? 'Checkmate'
+        : _position.isStalemate
+            ? 'Stalemate'
+            : _position.isInsufficientMaterial
+                ? 'Insufficient material'
+                : 'Game over';
     final summary = outcome == null
         ? 'Game Over'
         : outcome.winner == Side.white
-            ? 'White wins (${outcome.termination.name})'
+            ? 'White wins ($reason)'
             : outcome.winner == Side.black
-                ? 'Black wins (${outcome.termination.name})'
-                : 'Draw (${outcome.termination.name})';
+                ? 'Black wins ($reason)'
+                : 'Draw ($reason)';
 
     showDialog<void>(
       context: context,
@@ -922,8 +930,8 @@ class _PlayScreenState extends State<PlayScreen> {
                               ),
                             ),
                             if (_lastCoachResponse?.usedFallback == true)
-                              Chip(
-                                label: const Text(
+                              const Chip(
+                                label: Text(
                                   'Offline Fallback',
                                   style: TextStyle(fontSize: 11),
                                 ),
@@ -1084,3 +1092,4 @@ class _CompareCard extends StatelessWidget {
     );
   }
 }
+```
